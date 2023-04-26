@@ -1,0 +1,15 @@
+        features
+---authentication(login and signin end-points)
+--getall todosendpoint
+--update the todos endpoint
+--- delete the todos endpoints 
+--- post the todos endpoints 
+
+
+---------3 days project -------
+
+----day 1 basic setup for both frontend and the backend 
+
+---day 2 backend 
+
+--day 3 frontend 
