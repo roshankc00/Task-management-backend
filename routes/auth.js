@@ -1,6 +1,7 @@
 const express=require('express')
-const {signupHandler}=require('../controllers/authController')
+const {signupHandler,loginHandler}=require('../controllers/authController')
 const { body, validationResult } = require('express-validator');
+import authMiddleware from '../middlewares/auth';
 
 
 // instances and the variables 
@@ -13,5 +14,11 @@ router.post('/signin',[
 
 ],signupHandler)
 
+router.post('/login',[
+    body('email',"invalid email0").isEmail(),
+    body('password','enter atleast 8 charecter').isLength({min:8})
+],loginHandler)
+
 
 module.exports=router
+
