@@ -1,7 +1,6 @@
 const express=require('express')
 const {signupHandler,loginHandler}=require('../controllers/authController')
 const { body, validationResult } = require('express-validator');
-import authMiddleware from '../middlewares/auth';
 
 
 // instances and the variables 
