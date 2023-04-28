@@ -9,9 +9,9 @@ const User = require('../models/Ussermodel');
 // signup handler 
 const signupHandler=async(req,res)=>{
   const {name,email,password}=req.body
+  
+  //   throwing the validation error 
   const errors = validationResult(req);
-
-//   throwing the validation error 
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
   }
@@ -70,7 +70,6 @@ const loginHandler=async (req,res)=>{
     id:user._id
 }
 const token=jwt.sign(obj,JWT_SECREAT)
-console.log(token);
 //  sucess response 
   res.send({token:token})
 

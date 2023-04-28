@@ -2,16 +2,16 @@
 ---authentication(login and signin end-points)  done 
 
 ---i will create one middleware and if anycondition of the middleware fails then i wont give user to do crud on todos 
---getall todosendpoint
---update the todos endpoint
---- delete the todos endpoints 
---- post the todos endpoints 
+--getall todosendpoint   -> done 
+--update the todos endpoint ->done 
+--- delete the todos endpoints-> done 
+--- post the todos endpoints ->done 
 
 
 ---------3 days project -------
 
-----day 1 basic setup for both frontend and the backend 
+----day 1 basic setup for both frontend and the backend completed 
 
----day 2 backend 
+---day 2 backend completed 
 
---day 3 frontend 
+

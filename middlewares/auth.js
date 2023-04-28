@@ -8,6 +8,7 @@ const authMiddleware=(req,res,next)=>{
     try {
     const token=req.header('auth-token')
     if(!token){
+        console.log(token);
         return res.status(401).send({error:"Please autenticate yourself "})
     }
         const data=jwt.verify(token,JWT_SECREAT)
